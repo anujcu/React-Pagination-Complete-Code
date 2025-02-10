@@ -1,0 +1,92 @@
+
+.productItemr {
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    display: flex;
+    column-gap: 10px;
+    align-items: flex-start;
+}
+.productsWrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    column-gap: 10px;
+    row-gap: 10px;
+}
+.productItemr p{
+    padding: 10px;
+    margin: 0;
+    text-align: left;
+}
+.paginationButtons {
+    font-size: 16px;
+    height: 30px;
+    width: 30px;
+    display: inline-flex;
+    border: 1px solid #ddd;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+}
+.paginationButtons.active,
+.paginationButtons.active:hover
+{
+    background:#4c6ae4;
+    border-color: #4c6ae4;
+    color:#fff;
+}
+.paginationButtons:hover{
+    background:#eee;
+    cursor: pointer;
+}
+.paginationControls {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.paginationArrow{
+    height: 30px;
+    width: 30px;
+    display: inline-flex;
+    border: 1px solid #ddd;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+    background:#eee;
+}
+.paginationArrow:hover{
+    background:#4c6ae4;
+    border-color: #4c6ae4;
+    cursor: pointer;
+}
+.paginationArrow:hover svg path{
+    fill:#fff;
+}
+.paginationArrow:disabled,.paginationArrow:disabled:hover{
+    opacity: 0.2;
+    background:#ccc;
+    cursor: not-allowed;
+}
+.paginationArrow:disabled:hover svg path{
+    fill:#000;
+}
+.paginationControlBtns {
+    padding: 10px;
+    column-gap: 5px;
+    display: flex;
+    justify-content: center;
+}
+.paginationControlSelect {
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+}
+.selectPageSize {
+    height: 30px;
+    width: 50px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    outline: none;
+    font-size: 15px;
+}
